@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>English Minimal Design</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container main-nav">
+            
+            <span class="logo left">
+                <a href="index.html">Consilla</a>
+            </span>
+            <span class="hide search-bar font right big-search">
+                <form class="s-form font left" action="search.html">
+                    <input class="font"  type="text" name="" id="search-text" placeholder="Search on Consilla">
+                    <button class="s-btn font btn" type="submit"><i class="fas fa-search"></i> Search</button>
+                </form>
+                <span class="x close right">
+                    <a href='#' onclick="showNav();">x</a>
+                </span>
+            </span>
+            <span class="show nav right font big-nav">
+                <span class="active n-link">
+                    <a href="index.html">
+					<span><i class="fas fa-home"></i></span>
+					<span>Home</span>
+					<span class='note-piece'></span>
+					</a> 
+                </span> 			
+                <span class="n-link">
+                    <a href="pages/messeges.html">
+					<span><i class="fas fa-envelope"></i></span>
+					<span>Messeges</span>
+					<span class='note-piece'>(5)</span>
+					</a> 
+                </span> 
+                <span class="n-link">
+                    <a href="pages/notifications.html">
+						<span>
+							<i class="fas fa-bell"></i>
+						</span>
+						<span>
+							Notification
+						</span>
+						<span class='note-piece'>(5)</span>
+					</a>
+                </span>
+                <span class="n-link">
+                    <a href='#' onclick="showSearch();" ><i class="fas fa-search"></i> Discover</a></span>
+                <span class="log-out right">
+                    <a href="#" >Log out <i class="fas fa-sign-out-alt"></i></a>
+                </span>
+             </span>
+            <!-- sart small nav for mobile phones -->
+             <span class="show right font small-nav">
+                <span class="n-link s-home active">
+                    <a href="index.html">
+						<span><i class="fas fa-home" title="Home"></i></span>
+						
+					</a>
+                </span>
+                <span class="n-link">
+                    <a href="pages/messeges.html">
+						<span><i class="fas fa-envelope" title="Messages"></i></span>
+						<span class='note-piece'>(5)</span>
+					</a>
+                </span> 
+                
+                <span class="n-link">
+                    <a href="pages/notifications.html">
+						<span><i class="fas fa-bell" title="Notifications"></i></span>
+						<span class='note-piece'>(5)</span>
+					</a>
+                </span>
+                <span class="n-link">
+                    <a href='pages/msearch.html'><i class="fas fa-search" title="Discover"></i> </a>
+                </span>
+				<span class="n-link">
+                <a href="pages/mprofile.html"><i class="fas fa-bars"></i></a>
+				</span>
+            </span>
+            
+                 <!-- end small nav for mobile phones -->
+        </div>
+    </header>
+    <div class="container">
+            <span class="small-create fixed-down">
+                    <a class="btn" href="pages/posting.html"><i class="fas fa-edit"></i></a>
+            </span>
+        <aside class="fixed left">
+            <div class="userbg" style="background-image:url('imgs/u.jpg'); background-size:cover">
+                <div class="uimg">
+                    <a href="#">
+                        <img src="u.jpg" alt="Ghanem Ali">
+                    </a>
+                    
+                </div>
+                <div class="username">
+                    <a href="#"><h2>Ghanem Ali</h2></a>
+                </div>
+            </div>
+            <div class="font">
+                <a class="btn" href="#">
+                    <i class="fas fa-edit"></i> 
+					<span>Share new Post</span> 
+				</a>
+            </div>
+            <div class="side-links">
+                <ul>
+                    <li class="li-link left font">
+                        <a class="left" href="#">
+                            <i class="fas fa-users"></i> Connections
+                        </a>
+                        <span class="note right">10</span>
+                    </li>
+
+                    <li class="li-link left font">
+                        <a class="left" href="#">
+                            <i class="fas fa-tags"></i> Groups
+                        </a>
+                        <span class="note right">10</span>
+                    </li>
+                    <li class="li-link left font">
+                        <a class="left" href="#">
+                            <i class="fas fa-archive"></i> Content
+                        </a>
+                        <span class="note right">10</span>
+                    </li>
+                    <li class="li-link left font">
+                        <a class="left" href="#">
+                            <i class="fas fa-user"></i> Profile
+                        </a>
+                    </li>
+                    <li class="li-link left font">
+                        <a class="left" href="#">
+                            <i class="fas fa-cog"></i> Privacy and Settings
+                        </a>
+                    </li>
+                    <li class="li-link left font">
+                        <a class="left" href="#">
+                            <i class="fas fa-globe"></i> Language: English
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer">
+                all copyrights rserved &copy; Ghanem;
+                <a href="about.html">about</a>|<a href="#">terms of use</a>|<a href="#">contact Consilla team</a>
+            </div>
+        </aside>
+        <div class="main">
+            <div class="subnav font fixed " style='font-size:110%'>
+                <span class="n-link">
+                    <a href="#">Public</a>
+                </span> 
+                <span class="n-link active">
+                    <a href="#">Private</a>
+                </span> 
+				<span class='right drpdown'>Active Discussions v</span>
+            </div>
+            <div class="postsarea left">
+                <ul>
+					<li style='border:none; text-align: center; font-size:120%;'>
+						<a href='#'>
+							(3) new Discussions invtations
+						</a>
+					</li>
+                    <li>
+                        <div class="post">
+                            <div class="post-header">
+                                <a href="#">
+                                    <span>
+                                        <img src="u.jpg" alt="ghanem-ali">
+                                        <h4>Ghanem Ali</h4>
+                                    </span>
+                                </a>
+                                <span class="posting-time">3 hrs ago</span>
+                                <span class="right att" title="Red Alert"><i class="fas fa-circle"></i></span>
+                            </div>
+                            <div class="post-content font">
+                                <div class="postmedia">
+                                    <p class="post-font">سورة الفاتحه</p>
+                                    <audio controls>
+                                        <source src="001.ogg" type="audio/ogg">
+                                        <source src="001.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </div>
+                            <div class="post-footer font">
+                                <span>
+                                        <a href="#"><i class="fas fa-angle-double-up"></i> Upvote</a>
+                                </span>
+                                <span>
+                                        <a href="#"><i class="fas fa-comment"></i> Comment</a>
+                                </span>
+                                <span>
+                                        <a href="#"><i class="fas fa-eye"></i> Views</a>
+                                </span>
+                            </div>
+                        </div>
+                        </li>
+                    <li>
+                        <div class="post">
+                            <div class="post-header">
+                                <a href="#">
+                                    <span>
+                                        <img src="u.jpg" alt="ghanem-ali">
+                                        <h4>Ghanem Ali</h4>
+                                    </span>
+                                </a>
+                                <span class="posting-time">3 hrs ago</span>
+                                <span class="right att" title="Red Alert"><i class="fas fa-circle"></i></span>
+                            </div>
+							<div class="post-header" style='padding-left:40px;'>
+								<span>To</span>
+                                <a href="#">
+                                    <span>
+                                        <h4>Group Name</h4>
+                                    </span>
+                                </a>
+                                <span class="right font"><h5>Time Remaing: 23hr</h5></span>
+                            </div>
+                            <div class="post-content font">
+                                <div class="postmedia">
+                                    <a href="u.jpg" target="_blank">
+                                        <img src="u.jpg" alt="-">
+                                    </a>
+                                </div>
+                                <p class="post-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iusto molestias quasi ratione rerum facilis fugit. Quidem blanditiis aperiam facere, quaerat sequi excepturi perferendis a illum dignissimos dolor? Necessitatibus, fugiat.</p>
+                            </div>
+                            <div class="post-footer font">
+                                <span class='left'>
+									<a href="#">
+										<span><i class="fas fa-angle-double-up"></i></span>
+										<span><span>4</span>Upvote</span>
+									</a>
+                                </span>
+								<span class='left'>
+									<a href="#">
+										<span><i class="fas fa-comment"></i></span>
+										<span><span>4</span>Comment</span>
+									</a>
+                                </span>
+								<span class='left'>
+									<a href="#">
+										<span><i class="fas fa-users"></i></span>
+										<span><span>4</span>Members</span>
+									</a>
+                                </span>
+								<span class='right'>
+									<a href="#">
+										<span><i class="fas fa-ellipsis-h"></i></span>
+                                </span>
+                            </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="post">
+                            <div class="post-header">
+                                <a href="#">
+                                    <span>
+                                        <img src="u.jpg" alt="ghanem-ali">
+                                        <h4>Ghanem Ali</h4>
+                                    </span>
+                                </a>
+                                <span class="posting-time">3 hrs ago</span>
+                                <span class="right att" title="Red Alert"><i class="fas fa-circle"></i></span>
+                            </div>
+                            <div class="post-content font">
+                                <div class="post-media">
+                                    <a href="u.jpg" target="_blank">
+                                        <img src="u.jpg" alt="-">
+                                    </a>
+                                </div>
+                                <p class="post-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iusto molestias quasi ratione rerum facilis fugit. Quidem blanditiis aperiam facere, quaerat sequi excepturi perferendis a illum dignissimos dolor? Necessitatibus, fugiat.</p>
+                            </div>
+                            <div class="post-footer font">
+                               <span>
+                                    <a href="#"><i class="fas fa-angle-double-up"></i> Upvote</a>
+                               </span>
+                               <span>
+                                    <a href="#"><i class="fas fa-comment"></i> Comment</a>
+                               </span>
+                                <span>
+                                        <a href="#"><i class="fas fa-eye"></i> Views</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="post">
+                            <div class="post-header">
+                                <a href="#">
+                                    <span>
+                                        <img src="u.jpg" alt="ghanem-ali">
+                                        <h4>Ghanem Ali</h4>
+                                    </span>
+                                </a>
+                                <span class="posting-time">3 hrs ago</span>
+                                <span class="right att" title="Red Alert"><i class="fas fa-circle"></i></span>
+                            </div>
+                            <div class="post-content font">
+                                <div class="post-media">
+                                    <a href="#">
+                                        <video controls>
+                                            <source src="11.mp4" type="video/mp4">
+                                        </video>
+                                    </a>
+                                </div>
+                                <p class="post-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iusto molestias quasi ratione rerum facilis fugit. Quidem blanditiis aperiam facere, quaerat sequi excepturi perferendis a illum dignissimos dolor? Necessitatibus, fugiat.</p>
+                            </div>
+                            <div class="post-footer font">
+                                    <span>
+                                        <a href="#"><i class="fas fa-angle-double-up"></i> Upvote</a>
+                                    </span>
+                                    <span>
+                                        <a href="#"><i class="fas fa-comment"></i> Comment</a>
+                                    </span>
+                                    <span>
+                                            <a href="#"><i class="fas fa-eye"></i> Views</a>
+                                    </span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="post">
+                                <div class="post-header">
+                                    <a href="#">
+                                        <span>
+                                            <img src="he.jpg" alt="He">
+                                            <h4 class="he">He</h4>
+                                        </span>
+                                    </a>
+                                    <span class="posting-time">3 hrs ago</span>
+                                    <span class="right att" title="Red Alert"><i class="fas fa-circle"></i></span>
+                                </div>
+                            <div class="post-content font">
+
+                                <p class="post-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iusto molestias quasi ratione rerum facilis fugit. Quidem blanditiis aperiam facere, quaerat sequi excepturi perferendis a illum dignissimos dolor? Necessitatibus, fugiat.</p>
+                            </div>
+                            <div class="post-footer font">
+                                    <span>
+                                        <a href="#"><i class="fas fa-angle-double-up"></i> Upvote</a>
+                                    </span>
+                                    <span>
+                                        <a href="#"><i class="fas fa-comment"></i> Comment</a>
+                                    </span>
+                                    <span>
+                                            <a href="#"><i class="fas fa-eye"></i> Views</a>
+                                    </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                            <div class="post">
+                                <div class="post-header">
+                                    <a href="#">
+                                        <span>
+                                            <img src="ubg1.jpg" alt="ghanem-ali">
+                                            <h4>Ghanem Ali</h4>
+                                        </span>
+                                    </a>
+                                    <span class="posting-time">3 hrs ago</span>
+                                    <span class="right att" title="Red Alert"><i class="fas fa-circle"></i></span>
+                                </div>
+                                <div class="post-content font">
+                                    <div class="post-media">
+                                        <a href="ubg1.jpg" target="_blank">
+                                            <img src="ubg1.jpg" alt="-">
+                                        </a>
+                                    </div>
+                                    <p class="post-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iusto molestias quasi ratione rerum facilis fugit. Quidem blanditiis aperiam facere, quaerat sequi excepturi perferendis a illum dignissimos dolor? Necessitatibus, fugiat.</p>
+                                </div>
+                                <div class="post-footer font">
+                                    <span>
+                                        <a href="#"><i class="fas fa-angle-double-up"></i> Upvote</a>
+                                    </span>
+                                    <span>
+                                        <a href="#"><i class="fas fa-comment"></i> Comment</a>
+                                    </span>
+                                    <span>
+                                            <a href="#"><i class="fas fa-eye"></i> Views</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    <li>
+                        <div class="post">
+                                <div class="post-header">
+                                    <a href="#">
+                                        <span>
+                                            <img src="she.jpg" alt="She">
+                                            <h4 class="she">She</h4>
+                                        </span>
+                                    </a>
+                                    <span class="posting-time">3 hrs ago</span>
+                                    <span class="right att" title="Red Alert"><i class="fas fa-circle"></i></span>
+                                </div>
+                            <div class="post-content font">
+                                <p class="post-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iusto molestias quasi ratione rerum facilis fugit. Quidem blanditiis aperiam facere, quaerat sequi excepturi perferendis a illum dignissimos dolor? Necessitatibus, fugiat.</p>
+                            </div>
+                            <div class="post-footer font">
+                                    <span>
+                                        <a href="#"><i class="fas fa-angle-double-up"></i> 4 Upvote</a>
+                                    </span>
+                                    <span>
+                                        <a href="#"><i class="fas fa-comment"></i> 5 Comment</a>
+                                    </span>
+                                    <span>
+                                            <a href="#"><i class="fas fa-eye"></i> 7 Views</a>
+                                    </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="post">
+                            <div class="post-header">
+                                <a href="#">
+                                    <span>
+                                        <img src="ubg1.jpg" alt="ghanem-ali">
+                                        <h4>Ghanem Ali</h4>
+                                    </span>
+                                </a>
+                                <span class="posting-time">3 hrs ago</span>
+                                <span class="right att" title="Red Alert"><i class="fas fa-circle"></i></span>
+                            </div>
+                            <div class="post-content font">
+                                <div class="post-media">
+                                    <a href="ubg1.jpg" target="_blank">
+                                        <img src="ubg1.jpg" alt="-">
+                                    </a>
+                                </div>
+                                <p class="post-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iusto molestias quasi ratione rerum facilis fugit. Quidem blanditiis aperiam facere, quaerat sequi excepturi perferendis a illum dignissimos dolor? Necessitatibus, fugiat.</p>
+                            </div>
+                            <div class="post-footer font">
+                                <span>
+                                    <a href="#"><i class="fas fa-angle-double-up"></i> Upvote</a>
+                                </span>
+                                <span>
+                                    <a href="#"><i class="fas fa-comment"></i> Comment</a>
+                                </span>
+                                <span>
+                                        <a href="#"><i class="fas fa-eye"></i> Views</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="post">
+                            <div class="post-header">
+                                <a href="#">
+                                    <span>
+                                        <img src="she.jpg" alt="She">
+                                        <h4 class="she">She</h4>
+                                    </span>
+                                </a>
+                                <span class="posting-time">3 hrs ago</span>
+                                <span class="right att" title="Red Alert"><i class="fas fa-circle"></i></span>
+                            </div>
+                            <div class="post-content font">
+                                <div class="post-media">
+                                    <a href="ubg.jpg" target="_blank">
+                                        <img src="ubg.jpg" alt="-">
+                                    </a>
+                                </div>
+                                <p class="post-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iusto molestias quasi ratione rerum facilis fugit. Quidem blanditiis aperiam facere, quaerat sequi excepturi perferendis a illum dignissimos dolor? Necessitatibus, fugiat.</p>
+                            </div>
+                            <div class="post-footer font">
+                                <span>
+                                    <a href="#"><i class="fas fa-angle-double-up"></i> 4 Upvote</a>
+                                </span>
+                                <span>
+                                    <a href="#"><i class="fas fa-comment"></i> 5 Comment</a>
+                                </span>
+                                <span>
+                                        <a href="#"><i class="fas fa-eye"></i> 7 Views</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="left font trendsarea">
+                <ul>
+                    <li>
+                        <h4>Trend Groups</h4>
+                        <ul>
+                            <li>Group Name</li>
+                            <li>Group Name</li>
+                            <li>Group Name</li>
+                            <li>Group Name</li>
+                            <li>Group Name</li>
+                            <li>Group Name</li>
+
+                        </ul>
+                    </li>
+                    <li><br></li>
+                    <li>
+                        <h4>Top Users</h4>
+                        <li>User Name</li>
+                        <li>User Name</li>
+                        <li>User Name</li>
+                        <li>User Name</li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

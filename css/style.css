@@ -1,0 +1,535 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* start framework framework */
+.container {
+    overflow: hidden;
+    background-color: #fff;
+    max-width: 1050px;
+    min-width: 570px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    display: inline-block;
+}
+
+i {
+    color: inherit;
+	padding:0;
+}
+
+hr {
+    width: 90%;
+    margin: auto;
+}
+h2 {
+    font-size: 1.22rem;
+}
+
+.he {
+    color: rgb(65, 65, 204);
+}
+
+.she {
+    color: rgb(212, 34, 64);
+}
+.font{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: .945rem;
+	padding:0;
+}
+.btn {
+    display: inline-block;
+    padding: 2px;
+    background-color: #fff;
+    color: #111;
+    border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #000;
+    color:#fff;
+}
+
+a {
+    color: #888;
+    cursor: pointer;
+}
+
+a:hover {
+    color:#000;
+}
+.close {
+    font-size: 30px;
+    text-align: center;
+}
+.show {
+    display:inline-block;
+}
+
+.hide {
+    display: none;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 999;
+}
+
+.active {
+    color: #000 !important;
+    border-bottom: 5px solid #000;
+}
+
+.active a , .sub-active a {
+    color: inherit;
+}
+
+.sub-active {
+	color: #000 !important;
+}
+
+.label {
+	color: #444;
+}
+.fixed-down {
+    position: fixed;
+    bottom: 0;
+}
+.att {
+    color: #444;
+    font-size: 17px;
+    padding-left: 5px;
+}
+.att:hover {
+    color: #ff0000;
+}
+
+.post-font {
+    font-size: 1.02em !important;
+    color: #333;
+    text-align: center;
+}
+
+/* end framework */
+header {
+    background-color: #fff;
+    height:60px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.b {
+    display: none;
+}
+
+.small-nav {
+    display: none;
+}
+.logo {
+    position: absolute;
+}
+
+header .logo a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+    color:#333;
+    font-weight: bold;
+}
+
+header .search-bar {
+    width: 80%;
+}
+
+header .search-bar .s-form {
+    width:95%;
+}
+.x {
+    margin-top:-5px;
+}
+
+header .nav .n-link {
+    display: inline-block;
+    margin:0 5px;
+	position: relative;
+}
+
+header .nav .log-out {
+    margin-left:20px;
+}
+.note-piece {
+	width:20px;
+	height:20px;
+	background: #ccc;
+	color: red;
+	border-radius:40%;
+}
+
+#search-text {
+    display: inline-block;
+    width:75%;
+    height: 30px;
+    border: 1px solid #eee;
+    padding-left:10px;
+}
+header .search-bar .s-btn {
+    width: 20%;
+    height: 30px;
+}
+
+.small-create {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    right: 0;
+    display: none;
+}
+
+.small-create a {
+    display: inline-block;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+aside {
+    background-color: #fff;
+    width: 220px;
+    height: 700px;
+    text-align: center;
+    margin: auto;
+	padding: 0 10px;
+    padding-top: 75px;
+    /* border-right: 1px solid #eee; */
+}
+
+aside .userbg {
+    height: 200px;
+    padding-top: 60px;
+    text-align: center;
+    background-image: url('ubg.jpg');
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+aside .userbg .uimg {
+    display: inline-block;
+    padding: 8px;
+}
+
+aside .userbg .uimg img {
+    width: 75px;
+    height: 75px;
+    border: 1px solid rgb(255, 255, 255,255);
+    border-radius: 50%;
+}
+
+aside .username {
+    background-color: rgb(255, 255, 255, 200);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+aside .side-links {
+    width: auto;
+    padding-top: 20px;
+}
+
+aside ul li{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+aside .note {
+    color: #ff0000;
+}
+
+aside .btn {
+    display:inline-block;
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside .footer {
+    background-color: #eee;
+    color: #666;
+    width: 190px;
+	height:auto;
+	margin-top: 95%;
+    font-size: .82rem;
+    padding: 2px 2px 7px 2px;
+}
+
+.container .main {
+    position: relative;
+    background-color: #FFF;
+    margin-top: 50px;
+    margin-left: 250px;
+    width: 825px;
+}
+
+.container .main .subnav {
+    background-color: #fff;
+    width: 560px;
+    height: 50px;
+    padding-top: 20px;
+}
+.container .main .subnav .drpdown {
+	font-size: 12px;
+	margin: 0 40px;
+}
+
+.container .main .subnav span {
+    padding:0 5px;
+}
+
+.container .main .postsarea, .container .main .msgsarea, .container .main .trendsarea {
+    width:560px;
+    padding: 10px;
+    padding-top: 60px;
+    display: inline-block;
+}
+
+.postsarea ul li, .msgsarea ul li  {
+    width: 95%;
+    border: 1px solid #fff;
+    margin-bottom: 5px;
+    padding: 10px 0;
+    margin: 15px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.postsarea ul li:hover {
+    border: 1px solid #444;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.post{
+    width: inherit;
+    margin: auto;
+}
+
+.post .post-header {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 5px 10px 5px 0;
+}
+
+.post .post-header a img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.post-header .posting-time {
+    padding-left: 15px;
+    color: #888;
+    font-size: .8rem;
+}
+.post .post-content {
+    width: inherit;
+}
+
+.post .post-content a {
+    padding: 5px;
+}
+
+
+
+.post .post-content a img,
+.post .post-content a video,
+.post .post-content video,
+.post .post-content a audio,
+.post .post-content audio  {
+    display: block;
+    max-width: 100%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.post .post-content p {
+    padding: 0 10px 10px 10px;
+    max-width: 100%;
+}
+
+.post .post-footer {
+    height: 20px;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.post .post-footer  span {
+	padding: 0;
+}
+
+.msg .msg-footer {
+	height:30px;
+	
+}
+
+.msg .msg-footer input[type='text'], .msg .msg-footer button {
+	height:25px;
+	width:80%;
+	padding:4px;
+}
+
+.msg .msg-footer button {
+	width:18%;
+}
+
+.post .post-footer span {
+    padding-right: 5px;
+}
+
+.container .main .trendsarea {
+    width: 150px;
+    position: fixed;
+}
+
+
+@media(max-width: 850px) {
+    .container {
+        overflow: hidden;
+        min-width: 600px;
+    }
+    
+    .font {
+        font-size: .740rem;
+    }
+
+    .logo {
+        margin-top: -5px;
+    }
+	.subnav {
+		max-width: 100%;
+	}
+    .container .main .trendsarea {
+        display: none;
+    }
+
+
+}
+
+@media(max-width: 740px) {
+    .active {
+        border: none;
+    }
+    .container {
+        min-width: 240px;
+        overflow: visible;
+    }
+    .big-nav {
+        display: none;
+    }
+    .big-search {
+        display: none;
+    }
+    header .logo a {
+        font-size: 14px;
+        line-height: 25px;
+        padding-left: 5px;
+    }
+    .b {
+        display: inline-block;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        color:#555;
+        margin-top: -5px;
+
+    }
+    header a {
+        padding-right: 5px;
+    }
+    .small-nav {
+        display: inline-block;
+        margin-top: -5px;
+        font-size: 1rem;
+    }
+    .s-home {
+        padding-right: 5px;
+    }
+    aside {
+        display: none;
+    }
+
+    .small-create {
+        display: block;
+        border-radius: 50%;
+        z-index: 1000;
+    }
+    
+    .container .main {
+        width: 450px;
+        margin:auto;
+        margin-top: 45px;
+    }
+    .container .main .postsarea , .container .main .msgsarea{
+        width: inherit;
+        margin: auto;
+
+    }
+    .post .post-footer {
+        font-size: 14px;
+    }
+    .container .main .trendsarea {
+        display: none;
+    }
+	.n-link {
+		font-size:110%;
+	}
+}
+
+@media(max-width: 390px){
+    header .logo {
+		padding:0;
+	}
+	.n-link {
+		font-size:110%;
+	}
+	.subnav .n-link {
+		font-size:90%;
+	}
+    .container .main {
+        width: 320px;
+    }
+    .container .main .postsarea {
+        width: 320px;
+    }
+    .container .main .trendsarea {
+        display: none;
+    }
+    .post .post-footer {
+		padding-left:0;
+		padding-right:0;
+        font-size: 11px;
+    }
+}
+
